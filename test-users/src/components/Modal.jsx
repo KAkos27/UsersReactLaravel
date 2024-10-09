@@ -6,7 +6,7 @@ const Modal = ({ children, error }) => {
 
     useEffect(() => {
         error && modalRef.current.showModal();
-    });
+    }, [error]);
 
     return createPortal(
         <dialog ref={modalRef}>

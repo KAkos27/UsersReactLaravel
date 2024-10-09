@@ -27,6 +27,7 @@ function App() {
     const handleSubmitUser = async (event, user) => {
         event.preventDefault();
         if (!(user.name.trim() && user.email.trim())) {
+            setError({ message: "Please fill out every field." });
             return;
         }
         try {

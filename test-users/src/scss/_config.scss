@@ -1,0 +1,23 @@
+$light: #f9f7f7;
+$primary: #dbe2ef;
+$secondary: #3f72af;
+$dark: #112d4e;
+
+@mixin flex($align: center, $justify: center, $direction: row) {
+    align-items: $align;
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: $dark;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 1.3rem;
+}

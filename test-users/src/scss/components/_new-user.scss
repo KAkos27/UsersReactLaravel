@@ -1,8 +1,30 @@
 .new-user {
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
+    background-color: $primary;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    @include flex($direction: column);
     gap: 1rem;
     padding: 2rem;
     width: 400px;
+
+    & input {
+        border-radius: 1rem;
+        width: 14rem;
+        padding: 0.5rem;
+    }
+
+    &__button {
+        background-color: $primary;
+        border-color: $dark;
+        color: $dark;
+        outline: none;
+        padding: 1rem !important;
+        transition: 0.15s ease-in-out;
+
+        &:hover {
+            background-color: $secondary;
+            color: white;
+            cursor: pointer;
+        }
+    }
 }

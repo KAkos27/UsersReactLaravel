@@ -12,6 +12,7 @@ const NewUser = ({ onSubmit }) => {
             <input ref={emailRef} type="text" />
             <input
                 type="submit"
+                className="new-user__button"
                 onClick={(event) =>
                     onSubmit(event, {
                         name: nameRef.current.value,
